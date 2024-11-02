@@ -1,0 +1,50 @@
+Hyperparameters and performance metrics are both crucial in machine learning but serve different purposes:
+
+** Hyperparameters **
+Definition: Hyperparameters are the parameters of a machine learning algorithm that are set before training the model. They are not learned from the training data but are set manually or tuned through methods like GridSearchCV or RandomizedSearchCV.
+
+Purpose: Hyperparameters control the learning process and influence how well the model performs. They determine the structure of the model, the learning process, and other aspects of training.
+
+Examples:
+
+Ridge Regression: alpha (regularization strength) or lambda sometime
+Logistic Regression:  the hyperparameter C controls the regularization strength. It is the inverse of the regularization parameter λ (lambda).
+Decision Trees: max_depth, min_samples_split
+Support Vector Machines: C (penalty parameter), gamma (kernel coefficient)
+Neural Networks: number of layers, number of neurons per layer, learning rate, batch size
+Tuning: Hyperparameters are typically tuned using methods like GridSearchCV, RandomizedSearchCV, or Bayesian optimization to find the best combination that results in optimal model performance.
+
+*******************************************************************************************************************************************************************
+
+** Performance Metrics **
+Definition: Performance metrics are measures used to evaluate how well a model performs on a given task. They quantify the model's accuracy, error, or other aspects of its predictive power based on the predictions made by the model.
+
+Purpose: Performance metrics help assess the effectiveness of a model and determine how well it generalizes to unseen data. They provide insights into the model's accuracy, precision, recall, etc.
+
+Examples:
+
+Regression: Mean Squared Error (MSE), R-squared (R²), Mean Absolute Error (MAE)
+Classification: Accuracy, Precision, Recall, F1 Score, Area Under the ROC Curve (AUC-ROC)
+Clustering: Silhouette Score, Davies-Bouldin Index
+Usage: Performance metrics are used to evaluate and compare models during and after training. They help in understanding how well the model is performing and in deciding which model to deploy or further refine.
+
+******************************************************************************************************************************************************************************
+Key Differences
+Nature:
+
+Hyperparameters: Predefined settings of the model that are set before training.
+Performance Metrics: Evaluation criteria that assess the model’s output.
+Function:
+
+Hyperparameters: Influence the training process and model structure.
+Performance Metrics: Measure the model's performance on specific tasks or datasets.
+Optimization:
+
+Hyperparameters: Tuned to improve model performance.
+Performance Metrics: Used to assess and compare the quality of different models.
+Example Scenario
+Consider training a Ridge Regression model:
+
+Hyperparameter: alpha value, which controls the regularization strength.
+Performance Metric: Mean Squared Error (MSE), which measures how close the model’s predictions are to the actual target values.
+Hyperparameters are adjusted to find the best settings for the model, while performance metrics are used to evaluate how well those settings perform in practice.
